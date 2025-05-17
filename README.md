@@ -40,18 +40,12 @@ flowchart TD
     E -->|6-19| H[✅✅ 2 Gyms<br/>Top 2 ranked]
     E -->|20+| I[✅✅✅ 3 Gyms<br/>Top 3 ranked]
 
-    
-```
-
-
-```mermaid
-flowchart TD
+    %% === Notes ===
     subgraph "📝 Notes"
-        N1["🔵 L17: limits PokéStop/Gym density\nOnly one per L17 cell"]
-        N2["🟡 L14: determines gym conversion rules\nUp to 3 gyms per cell"]
-        N3["🟢 L20: governs wild spawn eligibility\nUsually 1 spawn per cell\nNot all L20s used"]
-        N4["⭐ Top-ranked = Niantic's POI score\nBased on edits, scans, popularity"]
-        N1 --> N2 --> N3 --> N4
+        N1[🔵 L17 limits PokéStop/Gym density<br/>Only one per L17 cell]
+        N2[🟡 L14 determines gym conversion rules<br/>Up to 3 gyms per cell]
+        N3[🟢 L20 governs wild Pokémon spawn eligibility<br/>Usually 1 spawn per cell; not all L20s used]
+        N4[⭐ Top-ranked = Niantic's internal POI score<br/>Based on edits, scans, popularity]
     end
 ```
 
