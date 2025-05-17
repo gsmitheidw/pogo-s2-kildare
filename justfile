@@ -5,6 +5,7 @@ build:
     git add index.html
     git commit -m 'Update index'
     git push
+    [console]::beep(2000, 500)
 
 clean:
     Remove-Item -Force index.html -ErrorAction SilentlyContinue
