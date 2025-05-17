@@ -10,8 +10,8 @@ center_lat = 53.1586
 center_lng = -6.9096
 
 # Bounding box size (in degrees)
-lat_delta = 0.02
-lng_delta = 0.03
+lat_delta = 0.03
+lng_delta = 0.08
 
 # Create bounding box around Kildare Town
 p1 = LatLng.from_degrees(center_lat - lat_delta, center_lng - lng_delta)
@@ -68,9 +68,22 @@ for cell_id in cells_L17:
     ).add_to(m)
 
 # Add PokéStops and Gyms as markers
+
+
 for poi in pois:
-    color = "blue" if poi["type"] == "PokéStop" else "green"
-    icon = "🔵" if poi["type"] == "PokéStop" else "🔴"
+
+    if poi["type"] == "PokéStop":
+        color = "blue"
+        icon = "🔵"
+    elif poi["type"] == "Gym":
+        color = "green"
+        icon = "🏋️"
+    else:  # NotPogo or unknown
+        color = "gray"
+        icon = "❔"
+
+    #color = "blue" if poi["type"] == "PokéStop" else "green"
+    #icon = "🔵" if poi["type"] == "PokéStop" else "🔴"
     
     folium.Marker(
         location=[poi["lat"], poi["lng"]],
@@ -80,5 +93,5 @@ for poi in pois:
 
 
 # Save the map
-m.save("kildare_s2.html")
+m.save("index.html")
 
