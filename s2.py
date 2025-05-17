@@ -23,7 +23,7 @@ def get_s2_cells_in_region(rect, level):
     coverer = RegionCoverer()
     coverer.min_level = level
     coverer.max_level = level
-    coverer.max_cells = 500  # Reasonable limit
+    coverer.max_cells = 300  # Reasonable limit
     return coverer.get_covering(rect)
 
 # Get S2 cells at levels 14 and 17
