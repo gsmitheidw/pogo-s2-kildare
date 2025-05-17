@@ -40,7 +40,7 @@ flowchart TD
     E -->|6-19| H[✅✅ 2 Gyms<br/>Top 2 ranked]
     E -->|20+| I[✅✅✅ 3 Gyms<br/>Top 3 ranked]
 
-    end
+    
 ```
 
 
