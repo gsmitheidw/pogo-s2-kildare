@@ -36,10 +36,22 @@ but simply was used in other Niantic games.
 - install python & pip
 - install justfile
 - clone this repo
+- ensure python pip and modules listed are installed in your venv
 - run ```just build``` or ```just rebuild```
 - open index.html in a browser
 
-## Chart of S2 cells and Gym Trigger Logic
+## Localise for another town:
+
+- Edit the centre coordinates for your own locating changing these in the s2.py code:  
+
+```python
+center_lat = 53.1586                                                                                                    center_lng = -6.9096
+```
+
+- Change the csv filename to your own list of stops and gym objects 
+
+
+## Chart of S2 cells and Gym Trigger Logic:
 
 
 ```mermaid
