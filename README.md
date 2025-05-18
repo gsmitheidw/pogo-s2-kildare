@@ -20,10 +20,10 @@ Map to aid positioning and co-ordinating. Click here for the map:
 | ------------- | ------ | --------- |
 | Blue          | 🔵     | PokéStop  |
 | Red           | 🔴     | Gym       |
-| Grey          | ❓     | Non-PoGo  |
+| Grey          | ❔     | Non-PoGo  |
 | Purple        | 🟣     | Nominated |
 
-** Non-pogo ** - this is useful because a cell could be occupied by an item that only exists in Ingres,  
+**Non-pogo** - this is useful because a cell could be occupied by an item that only exists in Ingres,  
 Yet only 1 stop can appear per layer 17 cell. 
 
 ## Preview:
