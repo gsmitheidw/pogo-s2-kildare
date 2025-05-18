@@ -1,2 +1,2 @@
-justfile linguist-language=Makefile
+justfile linguist-language=justfile
 index.html linguist-generated=true
