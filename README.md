@@ -1,7 +1,11 @@
 # Pokemon Go S2 Mapping Kildare
 
 Draws cells, stops gyms and non-PoGo entities over an OpenStreetView  
-Map to aid positioning and co-ordinating.
+Map to aid positioning and co-ordinating. Click here for the map:  
+
+
+[Kildare Town Map](https://gsmitheidw.github.io/pogo-s2-kildare/)
+
 
 ### Features
 - Pulls data from a csv file (not live updates and not relying on IITC/Ingress)
