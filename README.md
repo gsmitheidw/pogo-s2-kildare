@@ -12,6 +12,20 @@ Map to aid positioning and co-ordinating. Click here for the map:
 - Simple - only shows a grid for the town area
 - Can run static from a local pc/phone, does not require a hosted webserver
 
+
+#### Marker Legends
+
+
+| Marker Colour | Legend | Purpose   |
+| ------------- | ------ | --------- |
+| Blue          | 🔵     | PokéStop  |
+| Red           | 🔴     | Gym       |
+| Grey          | ❓     | Non-PoGo  |
+| Purple        | 🟣     | Nominated |
+
+** Non-pogo ** - this is useful because a cell could be occupied by an item that only exists in Ingres,  
+Yet only 1 stop can appear per layer 17 cell. 
+
 ## Preview:
 ![map preview](pogo-kildare.png)
 
