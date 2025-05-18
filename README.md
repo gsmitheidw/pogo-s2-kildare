@@ -42,11 +42,12 @@ but simply was used in other Niantic games.
 
 ## Localise for another town:
 
-- Edit the centre coordinates for your own locating changing these in the s2.py code:  
+- Edit the centre coordinates for your own locating changing these in the s2.py code:   
 
-<pre>
-center_lat = 53.1586                                                                                                    center_lng = -6.9096
-</pre>
+
+center_lat = 53.1586  
+center_lng = -6.9096  
+
 
 - Change the csv filename to your own list of stops and gym objects 
 
