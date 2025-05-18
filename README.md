@@ -16,15 +16,16 @@ Map to aid positioning and co-ordinating. Click here for the map:
 #### Marker Legends
 
 
-| Marker Colour | Legend | Purpose   |
-| ------------- | ------ | --------- |
-| Blue          | 🔵     | PokéStop  |
-| Red           | 🔴     | Gym       |
-| Grey          | ❔     | Non-PoGo  |
-| Purple        | 🟣     | Nominated |
+| Marker Colour | Legend | Purpose   | Notes                                             |
+| ------------- | ------ | --------- | ------------------------------------------------- |
+| Blue          | 🔵     | PokéStop  | Regular Pokestops                                 |
+| Red           | 🔴     | Gym       |                                                   | 
+| Grey          | ❔     | Non-PoGo  | Approved nominations that do not show in the game |
+| Purple        | 🟣     | Nominated | Items currently in queue or in voting in wayfarer |
 
 **Non-pogo** - this is useful because a cell could be occupied by an item that only exists in Ingres,  
-Yet only 1 stop can appear per layer 17 cell. 
+yet only 1 PokéStop can appear per Layer 17 cell. Or it could be that the nomination was approved
+but simply was used in other Niantic games.
 
 ## Preview:
 ![map preview](pogo-kildare.png)
