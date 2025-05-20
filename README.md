@@ -11,6 +11,7 @@ Map to aid positioning and co-ordinating. Click here for the map:
 - Pulls data from a csv file (not live updates and not relying on IITC/Ingress)
 - Simple - only shows a grid for the town area
 - Can run static from a local pc/phone, does not require a hosted webserver
+- Tint cells (L17) to indicate if there is more than one point of interest per cell (none/green/orange/red)  
 
 
 #### Marker Legends
@@ -59,7 +60,7 @@ center_lng = -6.9096
 flowchart TD
     %% === S2 Structure and Limits ===
     subgraph "🧱 S2 Cell Rules"
-        A[🟡 L14 Cell<br/>~2.4km²<br/>Used for Gym rules<br/>Contains ~64 L17 cells] --> B[🔵 L17 Cell<br/>~150m²<br/>Max 1 PokéStop or Gym per cell]
+        A[🟡 L14 Cell<br/>~2.4km²<br/>Used for Gym rules<br/>Contains ~64 L17 cells] --> B[🔵 L17 Cell<br/>~150m²<br/>Max 1 PokéStop or Gym per cell unless 1 upgraded or legacy rules or manual intervention by Niantic]
         B --> C[🟢 L20 Cell<br/>~12m²<br/>Used for wild spawns<br/>Max 1 spawn point per cell]
     end
 
