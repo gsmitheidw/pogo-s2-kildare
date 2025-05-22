@@ -1,4 +1,4 @@
-name,lat,lng,type
+name,lat,lng,type,notes
 "Kildare Business Park, Kildare Town",53.161912,-6.898854,Gym
 St Brigids Cathedral,53.157816,-6.911087,Gym
 St. Brigid Cross,53.159948,-6.9057,Gym
@@ -106,7 +106,7 @@ Pucking Goat,53.15331,-6.9157,NotPogo
 Blue Werewolves Sculpture,53.153031,-6.915574,NotPogo
 "Friar's Well",53.153015,-6.916258,NotPogo
 Corcomroe Cube,53.152985,-6.916802,NotPogo
-Wire Art 0n Wall,53.153461,-6.917259,NotPogo
+Wire Art 0n Wall,53.153461,-6.917259,NotPogo,Note the zero not letter O in the the name
 Visitors Return Sculpture,53.153703,-6.916573,NotPogo
 Kildare Village Chic Fountain,53.154045,-6.917198,NotPogo
 Pomegranate Offering sculpture,53.154315,-6.917167,NotPogo
@@ -141,6 +141,6 @@ Barrett House c.1770 Building,53.15653,-6.910131,PokéStop
 Historic Families of Kildare,53.157758,-6.910426,NotPogo
 Scuba,53.155279,-6.915208,NotPogo
 Kildare Derby Legends Trail Marker 10 of 12,53.148361,-6.907219,PokéStop
-Runabeg Drive Entrance Sign,53.156767,-6.895971,PokéStop
-Ruanbeg Crescent estate enterance,53.157926,-6.896974,PokéStop
-Ruanbeg Way field,53.157096,-6.899414,PokéStop
+Runabeg Drive Entrance Sign,53.156767,-6.895971,PokéStop,Confirm this is in Pogo
+Ruanbeg Crescent estate enterance,53.157926,-6.896974,PokéStop,Confirm this in in Pogo
+Ruanbeg Way field,53.157096,-6.899414,PokéStop,Confirm this is in Pogo
