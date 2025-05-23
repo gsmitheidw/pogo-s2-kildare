@@ -12,7 +12,10 @@ Map to aid positioning and co-ordinating. Click here for the map:
 - Simple - only shows a grid for the town area
 - Can run static from a local pc/phone, does not require a hosted webserver
 - Tint cells (L17) to indicate if there is more than one point of interest per cell (none/green/orange/red)  
-
+- Will zoom to your current GPS location
+- Allows for categories of Points of Interst such as Gyms and PokéStops  
+ but also Non-Pokémon Go (Ingres portal), Nominated and Potential
+- Can be localised to any town or location (see below)
 
 #### Marker Legends
 
@@ -41,16 +44,30 @@ but simply was used in other Niantic games.
 - run ```just build``` or ```just rebuild```
 - open index.html in a browser
 
-## Localise for another town:
+## Localise for another town or city or village:
 
-- Edit the centre coordinates for your own locating changing these in the s2.py code:   
+1. Edit the centre coordinates for your own locating changing these in the s2.py code:   
 
-
+```python
 center_lat = 53.1586  
 center_lng = -6.9096  
+```
+
+2. Change the csv filename to your own list of stops and gym objects. Here's an example:  
 
 
-- Change the csv filename to your own list of stops and gym objects 
+```csv
+name,lat,lng,type
+Kildare Square,53.157004,-6.910557,Gym
+"Leabharlann Cill Dara, Kildare Library",53.156641,-6.912269,PokéStop
+"Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,Nominated
+```
+
+
+3. Put the name of your csv file in s2.py replacing kildare_poi.csv  
+
+4. Build by running python s2.py  (or using a justfile if you want to be snazzy)  
+
 
 
 ## Chart of S2 cells and Gym Trigger Logic:
