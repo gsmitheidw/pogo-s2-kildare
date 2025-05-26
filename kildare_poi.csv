@@ -6,7 +6,7 @@ Cill Dara Golf Club,53.173615,-6.896687,Gym
 Old barracks clock tower,53.155857,-6.903061,Gym
 Kildare Train Station,53.162816,-6.908003,Gym
 Kildare Church Front,53.159532,-6.916507,Gym
-Entrance To Collaghknock Estate,53.163314,-6.893694,Gym
+Entrance To Collaghknock Estate,53.163314,-6.893694,Gym,Location to be moved to allow adjacent memorial to appear as a stop
 Kildare Square,53.157004,-6.910557,Gym
 Curragh finn,53.164495,-6.904775,Gym
 St. Brigid's Tower,53.158262,-6.91218,Gym
@@ -76,7 +76,7 @@ Statue of Mary,53.155586,-6.910694,NotPogo
 Horse Racing Mural Kildare Town,53.156323,-6.908178,NotPogo,"L17 cell full, but could be moved"
 Kildare Town Church,53.155447,-6.91099,NotPogo
 "Happy Sculpture, Kildare Village",53.155363,-6.917739,PokéStop
-"Round Towers Gaelic Football Club Entry Gates",53.160395,-6.911849,PokéStop
+"Round Towers Gaelic Football Club Entry Gates",53.160567,-6.912527,PokéStop
 "Round Towers Main Football Pitch",53.160802,-6.913319,PokéStop
 Ruanbeg Crescent estate enterance,53.157926,-6.896974,PokéStop
 Ruanbeg Way field,53.155755,-6.897172,PokéStop
@@ -129,7 +129,7 @@ Concrete Cast Water Tower Kildare,53.157359,-6.909281,PokéStop
 Lourdeville Plaque,53.158523,-6.909892,PokéStop
 "Round Tower's Supporter Stand",53.160596,-6.91298,PokéStop
 "Round Tower's Training Pitch",53.161192,-6.915171,PokéStop
-Round Towers Club House,53.160241,-6.914634,NotPogo
+Round Towers Club House,53.160241,-6.914634,NotPogo,L17 cell full
 Further Education and Training Centre Kildare,53.159801,-6.913899,PokéStop
 The Bug Hotel Art,53.160208,-6.915705,PokéStop
 Seanchaí Books,53.157258,-6.912253,PokéStop
