@@ -65,15 +65,15 @@ Grey Abbey Plaque,53.153156,-6.913134,PokéStop
 """The Church of The Oak"" street art.",53.157493,-6.913318,PokéStop
 White Abbey Information Sign,53.159915,-6.916456,PokéStop
 Rosmary Wall Plaque,53.158908,-6.915884,PokéStop
-"St. Brigid's Mural, Market Square",53.157273,-6.910325,NotPogo
-"Firecastle Grocer, Café and Rooms",53.157409,-6.910676,NotPogo
+"St. Brigid's Mural, Market Square",53.157273,-6.910325,NotPogo,L17 cell full
+"Firecastle Grocer, Café and Rooms",53.157409,-6.910676,NotPogo,L17 cell full
 Saint Brigid,53.156974,-6.910839,NotPogo
 Curragh Racecourse Publec Park,53.164768,-6.879543,PokéStop
 Lord Edward Fitzgerald,53.156838,-6.91013,NotPogo
 "Silken Thomas: Eat, Drink, Dance, Sleep",53.156647,-6.909597,NotPogo
 The Heart of Oak Statue,53.155413,-6.911493,NotPogo
 Statue of Mary,53.155586,-6.910694,NotPogo
-Horse Racing Mural Kildare Town,53.156323,-6.908178,NotPogo
+Horse Racing Mural Kildare Town,53.156323,-6.908178,NotPogo,"L17 cell full, but could be moved"
 Kildare Town Church,53.155447,-6.91099,NotPogo
 "Happy Sculpture, Kildare Village",53.155363,-6.917739,PokéStop
 "Round Towers Gaelic Football Club Entry Gates",53.160395,-6.911849,PokéStop
@@ -124,7 +124,7 @@ Drumcree Court Community Entrance,53.165546,-6.904355,Nominated
 "Kildare Derby Legends Trail Marker 9 of 12",53.150623,-6.908780,PokéStop
 "Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,Nominated
 "Rathbride Abbey Welcome Sign",53.168510,-6.902840,Potential
-Kildare Chilling Factory,53.156386,-6.911503,Potential
+Kildare Chilling Factory,53.156386,-6.911503,Potential,Held until credit union old castle wall submitted
 Concrete Cast Water Tower Kildare,53.157359,-6.909281,PokéStop
 Lourdeville Plaque,53.158523,-6.909892,PokéStop
 "Round Tower's Supporter Stand",53.160596,-6.91298,PokéStop
