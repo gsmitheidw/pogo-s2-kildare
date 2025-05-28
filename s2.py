@@ -1,9 +1,11 @@
 from s2sphere import CellId, Cell, LatLng, RegionCoverer, LatLngRect
 import folium
+from folium.plugins import MousePosition
 
 import pandas as pd
 df = pd.read_csv("kildare_poi.csv") 
 pois = df.to_dict(orient="records")
+
 
 # Kildare Town center
 center_lat = 53.1586
@@ -44,6 +46,18 @@ def get_cell_polygon(cell_id):
 # Create base map centered on Kildare
 m = folium.Map(location=[center_lat, center_lng], zoom_start=15)
 
+
+
+# Cursor Lat & Long pos
+MousePosition(
+    position="bottomright",
+    separator=" | ",
+    prefix="Lat/Lng:",
+    lat_formatter="function(num) {return L.Util.formatNum(num, 5);}",
+    lng_formatter="function(num) {return L.Util.formatNum(num, 5);}",
+).add_to(m)
+
+
 # Draw Level 14 cells (red)
 for cell_id in cells_L14:
     polygon = get_cell_polygon(cell_id)
@@ -56,19 +70,57 @@ for cell_id in cells_L14:
         tooltip=f"L14: {cell_id.id()}"
     ).add_to(m)
 
-# Draw Level 17 cells (blue)
+# Tint L17 for number of stops/gyms/non-stops per cell
+
+from collections import defaultdict
+
+# Build POI counts per L17 S2 cell
+# Add a tool tip at cursor showing count
+poi_counts = defaultdict(int)
+for poi in pois:
+    latlng = LatLng.from_degrees(poi["lat"], poi["lng"])
+    cell_id = CellId.from_lat_lng(latlng).parent(17)
+    poi_counts[cell_id.id()] += 1
+
+
 for cell_id in cells_L17:
+    cid = cell_id.id()
+    count = poi_counts[cid]
+
+    color = (
+        "#ff0000" if count >= 3 else
+        "#ffa500" if count == 2 else
+        "#00ff00" if count == 1 else
+        "#cccccc"
+    )
+
     polygon = get_cell_polygon(cell_id)
     folium.Polygon(
         locations=polygon,
-        color='blue',
-        fill=False,
+        color=color,
+        fill=True,
+        fill_opacity=0.4,
         weight=1,
-        tooltip=f"L17: {cell_id.id()}"
+        tooltip=f"{count} Items in cell"
     ).add_to(m)
+# end Tint & Tool Tip
+
+
+# Removed this block of blue overlay on L17 for performance 
+# Draw Level 17 cells (blue)
+#for cell_id in cells_L17:
+#    polygon = get_cell_polygon(cell_id)
+#    folium.Polygon(
+#        locations=polygon,
+#        color='blue',
+#        fill=False,
+#        weight=1,
+#        tooltip=f"L17: {cell_id.id()}"
+#    ).add_to(m)
+
+
 
 # Add PokéStops and Gyms as markers
-
 
 for poi in pois:
 
@@ -76,20 +128,33 @@ for poi in pois:
         color = "blue"
         icon = "🔵"
     elif poi["type"] == "Gym":
-        color = "green"
-        icon = "🏋️"
+        color = "red"
+        icon = "🔴"
+    elif poi["type"] == "Nominated":
+        color = "purple"
+        icon = "🟣"
+    elif poi["type"] == "Potential":
+        color = "lightgray"
+        icon = "💡"
     else:  # NotPogo or unknown
         color = "gray"
         icon = "❔"
 
-    #color = "blue" if poi["type"] == "PokéStop" else "green"
-    #icon = "🔵" if poi["type"] == "PokéStop" else "🔴"
-    
+    #note_text = f"[Notes]: {poi['notes']}" if poi.get('notes') else ""
+    note = poi.get('notes')
+    note_text = f"<br><br>💡<strong>Notes:</strong> {note}" if isinstance(note, str) and note.strip() else ""
+    popup_text = f"{icon} {poi['name']} ({poi['type']}){note_text}"
+
     folium.Marker(
         location=[poi["lat"], poi["lng"]],
-        popup=f"{icon} {poi['name']} ({poi['type']})",
+        popup=popup_text,
         icon=folium.Icon(color=color, icon="info-sign")
     ).add_to(m)
+
+
+
+from folium.plugins import LocateControl
+LocateControl(auto_start=False).add_to(m)
 
 
 # Save the map
