@@ -1,9 +1,9 @@
 set shell := ["C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "-NoProfile", "-Command"]
 
-build msg="Update index":
+build:
     python s2.py
     git add index.html
-    git commit -m "{{msg}}"
+    git commit -m 'update index'
     git push
     [console]::beep(2000, 500)
 

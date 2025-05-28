@@ -1,8 +1,8 @@
 
-build msg="Update index":
+build:
     python s2.py
     git add index.html
-    git commit -m "{{msg}}"
+    git commit -m 'Update index'
     git push
 
 clean:
