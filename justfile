@@ -16,3 +16,7 @@ csv:
     git add kildare_poi.csv
     git commit -m 'update csv'
     git push
+
+
+validate:
+    python validate_csv.py 
