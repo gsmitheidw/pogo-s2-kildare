@@ -1,3 +1,4 @@
+
 build:
     python s2.py
     git add index.html
@@ -13,3 +14,7 @@ csv:
     git add kildare_poi.csv
     git commit -m 'update csv'
     git push
+
+
+validate:
+    python validate_csv.py 
