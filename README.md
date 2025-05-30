@@ -37,37 +37,53 @@ but simply was used in other Niantic games.
 
 ## Building your own copy locally:
 
-- install python & pip
-- install justfile
-- clone this repo
-- ensure python pip and modules listed are installed in your venv
-- run ```just build``` or ```just rebuild```
-- open index.html in a browser
+1. Clone repo and install python & pip
 
-## Localise for another town or city or village:
-
-1. Edit the centre coordinates for your own locating changing these in the s2.py code:   
-
-```python
-center_lat = 53.1586  
-center_lng = -6.9096  
+```bash
+git clone https://github.com/yourusername/pogo-s2-kildare.git
+cd pogo-s2-kildare
+# create virtual environment for python:
+python3 -m venv venv
+source venv/bin/activate   # Or for Windows use path: venv\Scripts\activate
+# Asuming pyton pip is already installed via apt or choco or winget etc:
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-2. Change the csv filename to your own list of stops and gym objects. Here's an example:  
-
+2. Install "just" command runnner using apt or choco or winget etc - see https://github.com/casey/just
+3. Amend your csv file with Points of Interest. This is the example format:
 
 ```csv
-name,lat,lng,type
-Kildare Square,53.157004,-6.910557,Gym
+name,lat,lng,type,notes
+Kildare Square,53.157004,-6.910557,Gym,"Centre of the town"
 "Leabharlann Cill Dara, Kildare Library",53.156641,-6.912269,PokéStop
 "Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,Nominated
 ```
 
+It's probably a good idea to put double quotes around notes or anything that has a comma or special characters in the name.  
+If there's quotes in the name, use double quotes.
 
-3. Put the name of your csv file in s2.py replacing kildare_poi.csv  
 
-4. Build by running python s2.py  (or using a justfile if you want to be snazzy)  
+4. Replace the name for your csv file in s2.py replacing ```kildare_poi.csv``` with ```<yourtown>.csv```
+5. Set the GPS co-ords for the centre of your town in s2.py:
 
+Change these lines:
+
+```python
+center_lat = 53.1586
+center_lng = -6.9096
+```
+
+
+6. Run ```just build``` or ```just rebuild``` - also remember ```just validate``` to check the csv file for errors. If you prefer to run manually:
+
+```bash
+python3 s2.py
+```
+
+This will generate the index.html file. 
+
+7. Open index.html in a browser or host it on a webserver as you see fit. 
 
 
 ## Chart of S2 cells and Gym Trigger Logic:
