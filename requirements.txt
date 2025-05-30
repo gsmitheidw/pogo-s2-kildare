@@ -1,0 +1,3 @@
+2sphere>=0.2.5
+pandas>=1.0
+folium>=0.12
