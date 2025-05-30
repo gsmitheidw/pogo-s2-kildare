@@ -122,34 +122,71 @@ for cell_id in cells_L17:
 
 # Add PokéStops and Gyms as markers
 
-for poi in pois:
+# Create feature groups for each POI type
+gyms = folium.FeatureGroup(name='Gyms')
+pokestops = folium.FeatureGroup(name='PokéStops')
+nominated = folium.FeatureGroup(name='Nominated')
+potential = folium.FeatureGroup(name='Potential')
+notpogo = folium.FeatureGroup(name='NotPogo/Unknown')
 
+# Add markers to appropriate groups
+for poi in pois:
     if poi["type"] == "PokéStop":
         color = "blue"
         icon = "🔵"
+        group = pokestops
     elif poi["type"] == "Gym":
         color = "red"
         icon = "🔴"
+        group = gyms
     elif poi["type"] == "Nominated":
         color = "purple"
         icon = "🟣"
+        group = nominated
     elif poi["type"] == "Potential":
         color = "lightgray"
         icon = "💡"
+        group = potential
     else:  # NotPogo or unknown
         color = "gray"
         icon = "❔"
+        group = notpogo
 
-    #note_text = f"[Notes]: {poi['notes']}" if poi.get('notes') else ""
     note = poi.get('notes')
     note_text = f"<br><br>💡<strong>Notes:</strong> {note}" if isinstance(note, str) and note.strip() else ""
     popup_text = f"{icon} {poi['name']} ({poi['type']}){note_text}"
 
-    folium.Marker(
+    marker = folium.Marker(
         location=[poi["lat"], poi["lng"]],
         popup=popup_text,
         icon=folium.Icon(color=color, icon="info-sign")
-    ).add_to(m)
+    )
+    group.add_child(marker)
+
+# Add all groups to the map
+gyms.add_to(m)
+pokestops.add_to(m)
+nominated.add_to(m)
+potential.add_to(m)
+notpogo.add_to(m)
+
+
+# Add Esri sat
+folium.TileLayer(
+   	tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr='Esri',
+   	name='Esri Satellite',
+    overlay=False,
+    control=True
+).add_to(m)
+
+
+
+# Add layer control to toggle groups
+folium.LayerControl(collapsed=False).add_to(m)
+
+# Now save the map as usual
+m.save("index.html")
 
 
 
