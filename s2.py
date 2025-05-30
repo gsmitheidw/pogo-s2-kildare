@@ -43,9 +43,8 @@ def get_cell_polygon(cell_id):
     corners.append(corners[0])  # close polygon
     return corners
 
-# Create base map centered on Kildare
-m = folium.Map(location=[center_lat, center_lng], zoom_start=15)
-
+# Create base map centered on Kildare (OSM as default)
+m = folium.Map(location=[center_lat, center_lng], zoom_start=15, tiles="OpenStreetMap", name="OpenStreetMap")
 
 
 # Cursor Lat & Long pos
@@ -189,7 +188,7 @@ folium.LayerControl(collapsed=False).add_to(m)
 m.save("index.html")
 
 
-
+# go to current location
 from folium.plugins import LocateControl
 LocateControl(auto_start=False).add_to(m)
 
