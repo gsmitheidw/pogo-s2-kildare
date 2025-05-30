@@ -179,7 +179,13 @@ folium.TileLayer(
     control=True
 ).add_to(m)
 
-
+# Add OpenStreetMap *last* to make it default
+folium.TileLayer(
+    tiles="OpenStreetMap",
+    name="OpenStreetMap",
+    overlay=False,
+    control=True
+).add_to(m)
 
 # Add layer control to toggle groups
 folium.LayerControl(collapsed=False).add_to(m)
