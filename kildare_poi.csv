@@ -6,10 +6,11 @@ Cill Dara Golf Club,53.173615,-6.896687,Gym
 Old barracks clock tower,53.155857,-6.903061,Gym
 Cill Dara RFC,53.18159,-6.908903,PokéStop
 Welcome to The Curragh Sign,53.160849,-6.823387,PokéStop
+"Fáilte Go Cill Dara Sign (Welcome To Kildare)",53.163516,-6.890389,Gym,"Became Gym ~06Jun25"
 Moorefield GAA Club,53.172194,-6.849431,PokéStop
 Kildare Train Station,53.162816,-6.908003,Gym
 Kildare Church Front,53.159532,-6.916507,Gym
-Entrance To Collaghknock Estate,53.163314,-6.893694,Gym,Location to be moved to allow adjacent memorial to appear as a stop
+Entrance To Collaghknock Estate,53.163314,-6.893694,PokéStop,"Downgraded from Gym ~04Jun25"
 Kildare Square,53.157004,-6.910557,Gym
 Curragh finn,53.164495,-6.904775,Gym
 St. Brigid's Tower,53.158262,-6.91218,Gym
@@ -30,7 +31,6 @@ Assumpta Villas Entrance Plaque,53.160388,-6.905604,PokéStop
 James Downey Memorial Plaque,53.159813,-6.908771,PokéStop
 Kildare Town Court House,53.156531,-6.909108,Gym
 Follow The Stars Mural,53.155247,-6.916596,PokéStop
-Fáilte Go Cill Dara Sign (Welcome To Kildare),53.163516,-6.890389,PokéStop
 Magee Barracks Kildare Plaque,53.155181,-6.904262,PokéStop
 "Choo-Choo Coffee, Kildare Train Station",53.162174,-6.907633,PokéStop
 Kildare Playground,53.158573,-6.910513,PokéStop
@@ -87,7 +87,7 @@ Ruanbeg Drive Entrance Sign,53.156767,-6.895971,PokéStop
 "Walkers Gate, North Entrance, Kildare Town",53.164051,-6.920733,NotPogo,Accepted sharing cell
 Kildare Town Post Office,53.156582,-6.912804,PokéStop
 Kildare town tidy towns,53.163503,-6.912075,PokéStop
-Memorial for Albert Kindregan,53.163431,-6.89335,NotPogo
+Memorial for Albert Kindregan,53.163431,-6.89335,PokéStop,"Became a stop ~04Jun25"
 Melitta Park Commemorative Bench,53.161057,-6.898594,Gym
 Melitta Park Sign,53.161583,-6.899287,PokéStop
 "St Brigid's Boxing Club Kildare Town",53.162427,-6.899036,PokéStop
@@ -125,7 +125,7 @@ Drumcree Court Community Entrance,53.165546,-6.904355,Potential,Not Accepted - r
 "Kildare Derby Legends Trail, 4 of 12",53.157062,-6.916963,Nominated,Held - Needs to be further left of cell
 "Kildare Derby Legends Trail Marker, 3 of 12",53.157524,-6.913921,PokéStop
 "Kildare Derby Legends Trail Marker 9 of 12",53.150623,-6.908780,PokéStop
-"Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,Nominated,Rejected and renominated - in queue
+"Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,Nominated,Approved but not in game
 Kildare Derby Legends Trail,53.145587,-6.905164,NotPogo,"This is Marker 12 of 12,Accepted but didn't show up"
 "Rathbride Abbey Welcome Sign",53.168510,-6.902840,Potential
 Kildare Chilling Factory,53.156386,-6.911503,Potential,Held until credit union old castle wall submitted
