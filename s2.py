@@ -216,8 +216,8 @@ injection = '''
 <div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: white; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
   <h3>News</h3>
   <ul>
-    <li>PoI: Bishopsland Community Centre Added</li>
-    <li>PoI: Ionad Tacaíochta Oideachais Chill Daragh Added</li>
+    <li>PoI: 📍 Bishopsland Community Centre Added</li>
+    <li>PoI: 📍 Ionad Tacaíochta Oideachais Chill Daragh Added</li>
   </ul>
 </div>
 <script>
