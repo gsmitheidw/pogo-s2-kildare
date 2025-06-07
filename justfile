@@ -21,8 +21,9 @@ csv:
 validate:
     python validate_csv.py 
 
-news: rebuild
+s2: 
     git add s2.py
     git commit -m 'News update'
     git push
-    
+
+news: s2 rebuild
