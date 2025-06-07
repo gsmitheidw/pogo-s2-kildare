@@ -213,7 +213,7 @@ with open("index.html", "r", encoding="utf-8") as f:
 
 injection = '''
 <button onclick="toggleNews()" style="position: absolute; top: 140px; left: 10px; z-index: 1000;">📰 News</button>
-<div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: white; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
+<div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: #bab6a0; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
   <h3>News</h3>
   <ul>
     <li>PoI: 📍 Bishopsland Community Centre Added</li>
