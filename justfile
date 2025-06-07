@@ -23,7 +23,7 @@ validate:
 
 s2: 
     git add s2.py
-    git commit -m 'News update'
+    git commit -m 's2/news update'
     git push
 
 news: s2 rebuild
