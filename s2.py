@@ -203,3 +203,33 @@ LocateControl(auto_start=False).add_to(m)
 # Save the map
 m.save("index.html")
 
+
+
+### News panel:
+
+# Inject News panel and toggle button into the generated HTML
+with open("index.html", "r", encoding="utf-8") as f:
+    html = f.read()
+
+injection = '''
+<button onclick="toggleNews()" style="position: absolute; top: 140px; left: 10px; z-index: 1000;">📰 News</button>
+<div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: white; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
+  <h3>News</h3>
+  <ul>
+    <li>PoI: Bishopsland Community Centre Added</li>
+    <li>PoI: Ionad Tacaíochta Oideachais Chill Daragh Added</li>
+  </ul>
+</div>
+<script>
+function toggleNews() {
+  const panel = document.getElementById('newsPanel');
+  panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+'''
+
+html = html.replace('</body>', injection + '</body>')
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html)
+
