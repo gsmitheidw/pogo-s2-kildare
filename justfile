@@ -20,3 +20,9 @@ csv:
 
 validate:
     python validate_csv.py 
+
+news: rebuild
+    git add s2.py
+    git commit -m 'News update'
+    git push
+    
