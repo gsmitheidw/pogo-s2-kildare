@@ -244,7 +244,9 @@ injection = '''
   <li>⚫ Not in Pokémon Go (Black)</li>
   <li>⚫ Potential (Grey)</li>
   </ul>
-  
+  <hr noshade>
+  Cells with green tint are occupied by one PoI. Orange for two PoI and Red for three plus.<br>
+  Only one PoI can (usually!) occupy a L17 cell.
 </div>
 <script>
 function toggleNews() {
