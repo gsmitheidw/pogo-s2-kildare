@@ -159,36 +159,30 @@ for poi in pois:
     note_text = f"<br><br>💡<strong>Notes:</strong> {note}" if isinstance(note, str) and note.strip() else ""
     popup_text = f"{icon} {poi['name']} ({poi['type']}){note_text}"
 
+    marker = folium.Marker(
+        location=[poi["lat"], poi["lng"]],
+        icon=folium.Icon(color=color, icon="info-sign"),
+        popup=folium.Popup(f"""
+            <b>{icon} {poi['name']} ({poi['type']})</b>{note_text}
+            <script>
+                var marker = this;
+                marker._popup.once('add', function() {{
+                    var map = marker._map;
+                    var circle = L.circle([{poi["lat"]}, {poi["lng"]}], {{
+                        radius: 80,
+                        color: '{color}',
+                        weight: 1,
+                        fill: true,
+                        fillColor: '{color}',
+                        fillOpacity: 0.15
+                    }}).addTo(map);
+                }});
+            </script>
+        """, max_width=300)
+    )
+    group.add_child(marker)
 
-	marker = folium.Marker(
-    	location=[poi["lat"], poi["lng"]],
-	    icon=folium.Icon(color=color, icon="info-sign"),
-	    popup=folium.Popup(f"""
-    	    <b>{icon} {poi['name']} ({poi['type']})</b>{note_text}
-	        <script>
-	            var marker = this;
-	            marker._popup.once('add', function() {{
-    	           var map = marker._map;
-	               var circle = L.circle([{poi["lat"]}, {poi["lng"]}], {{
-	                   radius: 80,
-    	               color: '{color}',
-        	           weight: 1,
-            	       fill: true,
-                	   fillColor: '{color}',
-                    	illOpacity: 0.15
-	               }}).addTo(map);
-    	       }});
-	       </script>
-	   """, max_width=300)
-	)
-	group.add_child(marker)
-
-
-
-
-
-
-
+# 
 #    marker = folium.Marker(
 #        location=[poi["lat"], poi["lng"]],
 #        popup=popup_text,
