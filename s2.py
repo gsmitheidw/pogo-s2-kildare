@@ -212,13 +212,22 @@ with open("index.html", "r", encoding="utf-8") as f:
     html = f.read()
 
 injection = '''
-<button onclick="toggleNews()" style="position: absolute; top: 140px; left: 10px; z-index: 1000;">📰 News</button>
+<button onclick="toggleNews()" style="position: absolute; top: 140px; left: 10px; z-index: 1000;">📰 News/Info</button>
 <div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: #bab6a0; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
   <h3>News</h3>
   <ul>
     <li>PoI: 📍 Bishopsland Community Centre Added</li>
     <li>PoI: 📍 Ionad Tacaíochta Oideachais Chill Daragh Added</li>
   </ul>
+  <h3>Marker Legend</h3>
+  <ul>
+  <li>🔴 Gym (Red)</li>
+  <li>🔵 PokéStop (Blue)</li>
+  <li>🟣 Nominated (Pink)</li>
+  <li>⚫ Not in Pokémon Go (Black)</li>
+  <li>⚫ Potential (Grey)</li>
+  </ul>
+  
 </div>
 <script>
 function toggleNews() {
