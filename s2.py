@@ -161,46 +161,22 @@ for poi in pois:
 
     marker = folium.Marker(
         location=[poi["lat"], poi["lng"]],
-        icon=folium.Icon(color=color, icon="info-sign"),
-        popup=folium.Popup(f"""
-            <b>{icon} {poi['name']} ({poi['type']})</b>{note_text}
-            <script>
-                var marker = this;
-                marker._popup.once('add', function() {{
-                    var map = marker._map;
-                    var circle = L.circle([{poi["lat"]}, {poi["lng"]}], {{
-                        radius: 80,
-                        color: '{color}',
-                        weight: 1,
-                        fill: true,
-                        fillColor: '{color}',
-                        fillOpacity: 0.15
-                    }}).addTo(map);
-                }});
-            </script>
-        """, max_width=300)
+        popup=popup_text,
+        icon=folium.Icon(color=color, icon="info-sign")
     )
     group.add_child(marker)
 
-# 
-#    marker = folium.Marker(
-#        location=[poi["lat"], poi["lng"]],
-#        popup=popup_text,
-#        icon=folium.Icon(color=color, icon="info-sign")
-#    )
-#    group.add_child(marker)
 
-
-    # Add interaction circle
-    #folium.Circle(
-    #    location=[poi["lat"], poi["lng"]],
-    #    radius=80,
-    #    color=color,
-    #    weight=1,
-    #    fill=True,
-   #     fill_color=color,
-   #     fill_opacity=0.15
-   # ).add_to(range_fg)
+     Add interaction circle
+    folium.Circle(
+        location=[poi["lat"], poi["lng"]],
+        radius=80,
+        color=color,
+        weight=1,
+        fill=True,
+        fill_color=color,
+        fill_opacity=0.15
+     ).add_to(range_fg)
 
 
 
@@ -210,7 +186,7 @@ pokestops.add_to(m)
 nominated.add_to(m)
 potential.add_to(m)
 notpogo.add_to(m)
-#range_fg.add_to(m) # 80m range per poi
+range_fg.add_to(m) # 80m range per poi
 
 # Add Esri sat
 folium.TileLayer(
