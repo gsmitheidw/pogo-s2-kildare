@@ -129,8 +129,8 @@ nominated = folium.FeatureGroup(name='Nominated')
 potential = folium.FeatureGroup(name='Potential')
 notpogo = folium.FeatureGroup(name='NotPogo/Unknown')
 
-
-range_fg = folium.FeatureGroup(name="Interaction Ranges")  # make sure this is declared before loop
+# show 80m spin radius, off by default
+range_fg = folium.FeatureGroup(name="Interaction Ranges", show=False)
 
 # Add markers to appropriate groups
 for poi in pois:
@@ -167,15 +167,15 @@ for poi in pois:
     group.add_child(marker)
 
 
-     Add interaction circle
+    #Add interaction circle
     folium.Circle(
         location=[poi["lat"], poi["lng"]],
         radius=80,
         color=color,
-        weight=1,
+        weight=0.5,
         fill=True,
         fill_color=color,
-        fill_opacity=0.15
+        fill_opacity=0.10
      ).add_to(range_fg)
 
 
