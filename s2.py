@@ -129,6 +129,9 @@ nominated = folium.FeatureGroup(name='Nominated')
 potential = folium.FeatureGroup(name='Potential')
 notpogo = folium.FeatureGroup(name='NotPogo/Unknown')
 
+
+range_fg = folium.FeatureGroup(name="Interaction Ranges")  # make sure this is declared before loop
+
 # Add markers to appropriate groups
 for poi in pois:
     if poi["type"] == "PokéStop":
@@ -163,13 +166,27 @@ for poi in pois:
     )
     group.add_child(marker)
 
+
+    # Add interaction circle
+    folium.Circle(
+        location=[poi["lat"], poi["lng"]],
+        radius=80,
+        color=color,
+        weight=1,
+        fill=True,
+        fill_color=color,
+        fill_opacity=0.15
+    ).add_to(range_fg)
+
+
+
 # Add all groups to the map
 gyms.add_to(m)
 pokestops.add_to(m)
 nominated.add_to(m)
 potential.add_to(m)
 notpogo.add_to(m)
-
+range_fg.add_to(m) # 80m range per poi
 
 # Add Esri sat
 folium.TileLayer(
