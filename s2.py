@@ -233,6 +233,7 @@ injection = '''
 <div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: #bab6a0; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
   <h3>News</h3>
   <ul>
+    <li>PoI: 📍 Mani, Pizza By The Slice Nomimated
     <li>PoI: 📍 Grey Abbey Boardwalk bench approved</li>
     <li>PoI: 📍 Firecastle appears on market square</li>
     <li>PoI: 📍 Kildare Derby Legends trail marker 11 of 12 approved</li>
