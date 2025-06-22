@@ -91,7 +91,7 @@ Memorial for Albert Kindregan,53.163431,-6.89335,PokéStop,"Became a stop ~04Jun
 Melitta Park Commemorative Bench,53.161057,-6.898594,Gym
 Melitta Park Sign,53.161583,-6.899287,PokéStop
 "St Brigid's Boxing Club Kildare Town",53.162427,-6.899036,PokéStop
-Curragh Race Course,53.167556,-6.839223,PokéStop
+Curragh Race Course,53.167556,-6.839223,PokéStop,"Ridgewood Pearl Statue, Curragh"
 Former Parish Church Historic Plaque,53.158383,-6.91334,PokéStop
 Entrance to former Parish church of our lady,53.158453,-6.912434,NotPogo
 Bench on Horse Bust,53.166565,-6.913,Gym
@@ -117,14 +117,14 @@ Tree Bearing Fruits,53.154638,-6.91723,NotPogo
 Oak Glebe Stone Sign,53.170352,-6.90139,PokéStop
 Cunnaberry Hill Community Entrance,53.152923,-6.909924,Potential,Not Accepted - resubmit/appeal
 Drumcree Court Community Entrance,53.165546,-6.904355,Potential,Not Accepted - resubmit/appeal
-"Kildare Derby Legends Trail Marker, 2 of 12",53.157020,-6.911658,Nominated,Accepted but in cell with 2 PoI so may not show
+"Kildare Derby Legends Trail Marker, 2 of 12",53.157020,-6.911658,NotPogo,Full L17 cell
 "The Curragh Racecourse Main Building, Kildare",53.168601,-6.841440,Gym
 "Kildare Derby Legend's Trail Marker, 5 of 12",53.155654,-6.917517,PokéStop
-"Kildare Derby Legends Trail, 4 of 12",53.157062,-6.916963,Nominated,"Approved 09Jun25, may be NotGo due to second item in L17 cell"
+"Kildare Derby Legends Trail, 4 of 12",53.157062,-6.916963,NotPogo,"Approved 09Jun25, but NotGo - full  L17 cell"
 "Kildare Derby Legends Trail Marker, 3 of 12",53.157524,-6.913921,PokéStop
 "Kildare Derby Legends Trail Marker 9 of 12",53.150623,-6.908780,PokéStop
-"Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,NotPogo,"Approved and sole item in L17 cell, but not showing in game"
-Kildare Derby Legends Trail,53.145587,-6.905164,NotPogo,"This is Marker 12 of 12,Accepted but didn't show up"
+"Kildare Derby Legends Trail Marker 8 of 12",53.155120,-6.911573,NotPogo,Full L17 cell with CMWS plaque
+Kildare Derby Legends Trail,53.145587,-6.905164,NotPogo,"This is Marker 12 of 12, L17 full with National Stud Gate PoI"
 Kildare Chilling Factory,53.156386,-6.911503,Potential,Held until credit union old castle wall submitted
 Concrete Cast Water Tower Kildare,53.157359,-6.909281,PokéStop
 Lourdeville Plaque,53.158523,-6.909892,PokéStop
@@ -197,10 +197,9 @@ Holy Well Of Bridget,53.143843,-6.902362,NotPogo
 Mares and Foals Info,53.148949,-6.898209,NotPogo
 Nursery Paddocks Info,53.148936,-6.898522,NotPogo
 Ionad Tacaíochta Oideachais Chill Daragh,53.158603,-6.914607,PokéStop
-"Kildare & Corp Nuds Twinned Towns",53.155704,-6.882948,Nominated
+"Kildare & Corp Nuds Twinned Towns",53.155704,-6.882948,Nominated,"Rejected, awaiting resubmit/appeal"
 "Yolo gastro bar & grill, Kildare",53.156487,-6.917807,PokéStop
-"Crosaire Rath Bhride",53.180023,-6.884312,Nominated,"In Voting"
-"Kildare Derby Legends Trail Marker, 7 of 12",53.153160,-6.913141,Nominated,"In Voting, probably NotGo as too close to plaque cell"
+"Kildare Derby Legends Trail Marker, 7 of 12",53.153160,-6.913141,NotPogo,NotPogo because too close to plaque cell
 "Grey Abbey Bench, Kildare Town",53.152805,-6.914413,PokéStop
 "Cloghgarret Abbey Community Garden",53.167972,-6.901855,PokéStop
 Bishopsland Community Centre,53.16648,-6.909071,PokéStop
@@ -213,3 +212,4 @@ Kildare Village Welcome Sign,53.154559,-6.918844,Nominated
 Kildare Tidy Towns (South),53.156904,-6.919651,Nominated
 "DE BRUIR, Leather Craftsmanship",53.155721,-6.919500,Nominated
 "Fáilte Go Cill Dara, Kildare",53.154108,-6.919246,Nominated,Near kildare village
+St Brigid's Park,53.158603,-6.911202,PokéStop
