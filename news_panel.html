@@ -1,0 +1,33 @@
+<button onclick="toggleNews()" style="position: absolute; top: 140px; left: 10px; z-index: 1000;">📰 News/Info</button>
+<div id="newsPanel" style="display: none; position: absolute; top: 40px; left: 120px; z-index: 1000; background: #bab6a0; padding: 10px; border: 1px solid #ccc; max-width: 300px;">
+  <h3>News</h3>
+  <ul>
+    <li>PoI: 📍 Mani, Pizza By The Slice Approved</li>
+    <li>PoI: 📍 In Nominations: Ghost Horses Scupltures, Lilywhites electrical box, Kildare Wildlife Rescure,
+	    De Bruir Leather sign and the Welcome to Kildare beside the roundabout outside Kilare Village
+	    (as well as the Kildare Village sign itself</li>
+    <li>PoI: 📍"Kildare Derby Legends Trail marker, 6 of 12" in queue but L17 is full so sadly it's unlikely to
+	    appear in the game</li>
+    <li>PoI: 💡 Also recently approved include the St Brigid's Cross in the park behind the playground and
+	    the green in Cloghgarret. There are greens in other nearby estates which could be added too such as
+	    Drumcree.</li> 
+  </ul>
+  <h3>Marker Legend</h3>
+  <ul>
+    <li>🔴 Gym (Red)</li>
+    <li>🔵 PokéStop (Blue)</li>
+    <li>🟣 Nominated (Pink)</li>
+    <li>⚫ Not in Pokémon Go (Black)</li>
+    <li>⚫ Potential (Grey)</li>
+  </ul>
+  <hr noshade>
+  Cells with green tint are occupied by one PoI. Orange for two PoI and Red for three plus.<br>
+  Only one PoI can (usually!) occupy a L17 cell.
+</div>
+<script>
+function toggleNews() {
+  const panel = document.getElementById('newsPanel');
+  panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
