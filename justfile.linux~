@@ -2,7 +2,6 @@
 build:
     python s2.py
     git add index.html
-    git add news_panel.html
     git commit -m 'Update index'
     git push
 
@@ -19,5 +18,3 @@ csv:
 
 validate:
     python validate_csv.py 
-
-
