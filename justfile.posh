@@ -19,4 +19,12 @@ csv:
 
 
 validate:
-    python validate_csv.py 
+    python validate_csv.py
+
+news:
+    git add news_panel.html
+    git commit -m 'update news'
+    python s2.py
+    git add index.html
+    git commit -m 'update news'
+    git push
