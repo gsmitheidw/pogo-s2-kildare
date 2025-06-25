@@ -2,6 +2,7 @@
 build:
     python s2.py
     git add index.html
+    git add news_panel.html
     git commit -m 'Update index'
     git push
 
@@ -20,4 +21,3 @@ validate:
     python validate_csv.py 
 
 
-s2:                                                                                                                        git add s2.py                                                                                                          git commit -m 'News update'                                                                                            git push                                                                                                                                                                                                                                  news: s2 rebuild

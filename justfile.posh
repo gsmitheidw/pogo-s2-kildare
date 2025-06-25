@@ -3,6 +3,7 @@ set shell := ["C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", 
 build:
     python s2.py
     git add index.html
+    git add news_panel.html
     git commit -m 'Update index'
     git push
     [console]::beep(2000, 500)
